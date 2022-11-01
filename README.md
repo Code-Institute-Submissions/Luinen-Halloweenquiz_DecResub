@@ -1,7 +1,7 @@
 # Spooky Halloween
   
 
-**Welcome to [Spooky Halloween]()!**
+**Welcome to [Spooky Halloween](https://luinen.github.io/2ndproject_quiz/)!**
   
 
 Spooky Halloween is a Halloween-related quiz game. This small game gives you 5 minutes of fun for people who like exciting facts and want to learn something new. Here's an excellent chance to prove to your relatives that you are the smartest and luckiest family member.  The game is simple and enjoyable. Who will be the first on the leaderboard?
@@ -61,6 +61,11 @@ I explain the website features below.
 
 #### **Lighthouse testing**
 
+I used lighthouse to check the performance of my home page for mobile devices and desktop.
+- I designed the site for the desktop version first, and I was happy to see everything was green on the first try.
+![lighthouse_desktop](assets/images/)
+- Similar high green numbers on the mobile version, but slightly worse than on the desktop version. The pictures aspect ratio caused this difference. 
+ ![lighthouse_mobile](assets/images/)
 
 #### **Validator Testing**
 
@@ -76,7 +81,7 @@ I explain the website features below.
   1. In the GitHub repository, navigate to the Settings tab.
   2. From the source section drop-down menu, select the Master Branch.
   3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-  4. The live link can be found here: 
+  4. The live link can be found here: https://luinen.github.io/2ndproject_quiz/
 
 - If you want to clone the repository:
   1. In the GitHub repository, click on the 'Code'.
