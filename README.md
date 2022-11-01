@@ -19,8 +19,21 @@ I explain the website features below.
   - A solid page with Halloween style, there are three options. If you click on the start button, the game will start. 
   - If the users want to know more about the instructions, they can click on the rules button. 
   - And finally, the users can see the leaderboard if they click the high scores button.
+  - The active button appears with black border and purple box shadow , which highlights it from the background.
 
   ![main_menu](assets/images/main_menu.png)
   ![instructions](assets/images/instructions.png)
   ![leaderboard](assets/images/emptyleaderboard.png)
 
+- **4 choices**
+  - You can choose four different answers, and the active answer works the same as the main menu buttons.
+
+![choices](assets/images/choices.png)
+
+  - If you choose the good answer, the background of the answer will be green.
+  
+![correctanswer](assets/images/correctanswer.png)
+
+  - But if you choose the wrong answer, it will be red.
+
+![wronganswer](assets/images/wronganswer.png)
