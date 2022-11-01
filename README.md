@@ -42,3 +42,8 @@ I explain the website features below.
   - The user receives 100 points for each correct answer. Wrong answers don't give you points, and you can't get more than 1000 points.
 
 ![score](assets/images/score.png)
+
+- **Game Over page**
+  - At the end of the quiz, the users can save their high score and enter their name, play again, or go back to the main menu. 
+
+![gameover](assets/images/gameover.png)
