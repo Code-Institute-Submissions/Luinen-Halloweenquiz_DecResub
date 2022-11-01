@@ -37,3 +37,8 @@ I explain the website features below.
   - But if you choose the wrong answer, it will be red.
 
 ![wronganswer](assets/images/wronganswer.png)
+
+- **Score**
+  - The user receives 100 points for each correct answer. Wrong answers don't give you points, and you can't get more than 1000 points.
+
+![score](assets/images/score.png)
