@@ -44,6 +44,11 @@ I explain the website features below.
 ![score](assets/images/score.png)
 
 - **Game Over page**
-  - At the end of the quiz, the users can save their high score and enter their name, play again, or go back to the main menu. 
+  - At the end of the quiz, the users can save their high score and enter their name, play again, or go back to the main menu. The form is easy to use and the placeholder helps the users.  
 
 ![gameover](assets/images/gameover.png)
+
+- **Leaderboard**
+  - This part shows the saved usernames with their scores. The lowest points are at the bottom of the page, and the highest points are at the top.
+
+![leaderboard2](assets/images/leaderboard.png)
