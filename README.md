@@ -52,3 +52,24 @@ I explain the website features below.
   - This part shows the saved usernames with their scores. The lowest points are at the bottom of the page, and the highest points are at the top.
 
 ![leaderboard2](assets/images/leaderboard.png)
+
+### **Features left to implement**
+- I think a timer or a countdown would be a good idea to add to this quiz
+- I want to add a progress bar next to the score
+
+## Testing
+
+#### **Lighthouse testing**
+
+
+#### **Validator Testing**
+
+- **HTML**
+  
+- **CSS**
+  
+- **JS**
+
+## Deployment  
+
+
