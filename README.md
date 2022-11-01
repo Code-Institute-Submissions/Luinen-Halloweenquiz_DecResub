@@ -72,4 +72,14 @@ I explain the website features below.
 
 ## Deployment  
 
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  1. In the GitHub repository, navigate to the Settings tab
+  2. From the source section drop-down menu, select the Master Branch
+  3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+  4. The live link can be found here: 
 
+- If you want to clone the repository:
+  1. In the GitHub repository, click on the 'Code'
+  2. Click 'Open with GitHub Desktop' to clone and open the repository with GitHub Desktop
+  3. Click 'Choose...' and, using the Finder window, navigate to a local path where you want to clone the repository. 
+  4. Click Clone.  
