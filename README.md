@@ -73,13 +73,27 @@ I explain the website features below.
 ## Deployment  
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  1. In the GitHub repository, navigate to the Settings tab
-  2. From the source section drop-down menu, select the Master Branch
+  1. In the GitHub repository, navigate to the Settings tab.
+  2. From the source section drop-down menu, select the Master Branch.
   3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
   4. The live link can be found here: 
 
 - If you want to clone the repository:
-  1. In the GitHub repository, click on the 'Code'
-  2. Click 'Open with GitHub Desktop' to clone and open the repository with GitHub Desktop
+  1. In the GitHub repository, click on the 'Code'.
+  2. Click 'Open with GitHub Desktop' to clone and open the repository with GitHub Desktop.
   3. Click 'Choose...' and, using the Finder window, navigate to a local path where you want to clone the repository. 
   4. Click Clone.  
+
+  ## Credits
+
+#### Content
+
+- The questions for the quiz were taken from [Parade](https://parade.com/1066846/jessicasager/halloween-trivia/).
+- Instructions of the container were taken from  [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)
+- The idea of the rules was taken from [CodingNepal](https://www.youtube.com/c/CodingNepal)
+- Start the game and get new question function tutorial by [James Q Quick](https://www.youtube.com/c/JamesQQuick)
+- Highscore function and local store save by [Brian Design](https://www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A) was great.
+
+#### Media 
+
+- The pumpkin image was taken from [Dribble](https://dribbble.com/). 
