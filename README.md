@@ -19,3 +19,8 @@ I explain the website features below.
   - A solid page with Halloween style, there are three options. If you click on the start button, the game will start. 
   - If the users want to know more about the instructions, they can click on the rules button. 
   - And finally, the users can see the leaderboard if they click the high scores button.
+
+  ![main_menu](assets/images/main_menu.png)
+  ![instructions](assets/images/instructions.png)
+  ![leaderboard](assets/images/emptyleaderboard.png)
+
