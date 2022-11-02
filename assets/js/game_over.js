@@ -26,4 +26,3 @@ function saveHighScore(e) {
     window.location.assign('/');
 }
 saveHighScore();
-

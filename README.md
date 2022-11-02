@@ -119,7 +119,10 @@ I used lighthouse to check the performance of my home page for mobile devices an
 ![jsvalidator](assets/images/jsvalidator.png)
   - After these mistakes were fixed, no errors were returned when passing through the official [JS validator](https://jshint.com/)
 
-#### 
+## Bugs
+
+- If the users reach the game over page and save the score, after that there is an error 404 'Content Security Policy: The page’s settings blocked the loading of a resource at inline'. If they go back to the main menu and check the High Scores, their score is there.
+- Unfortunately, I wanted to change the repository name and publish the site. After these actions, I opened the gitpod and I noticed some missing lines, and errors, and I wasn't able to push, so I decided to delete the repository(I thought it was just a copy).
 
 ## Deployment  
 
