@@ -1,7 +1,7 @@
 # Spooky Halloween
   
 
-**Welcome to [Spooky Halloween](https://luinen.github.io/2ndproject_quiz/)!**
+**Welcome to [Spooky Halloween](https://luinen.github.io/Halloweenquiz/)!**
   
 
 Spooky Halloween is a Halloween-related quiz game. This small game gives you 5 minutes of fun for people who like exciting facts and want to learn something new. Here's an excellent chance to prove to your relatives that you are the smartest and luckiest family member.  The game is simple and enjoyable. Who will be the first on the leaderboard?
@@ -59,29 +59,72 @@ I explain the website features below.
 
 ## Testing
 
+  - The game works as intended. 
+  - The scoring system is okay, it gives you 100 points for each correct answer. 
+  - I tested each button and answers.
+  - You have to fill out the username if you want to save your result. 
+  - Responsiveness is good enough for every platform. 
+
 #### **Lighthouse testing**
 
-I used lighthouse to check the performance of my home page for mobile devices and desktop.
-- I designed the site for the desktop version first, and I was happy to see everything was green on the first try.
-![lighthouse_desktop](assets/images/)
-- Similar high green numbers on the mobile version, but slightly worse than on the desktop version. The pictures aspect ratio caused this difference. 
- ![lighthouse_mobile](assets/images/)
+I used lighthouse to check the performance of my home page for mobile devices and desktop. The first time running the lighthouse, my SEO value was 80. After I added 'meta', the figures increased.
+- Desktop version
+![lighthouse_desktop](assets/images/lighthousedesktop.png)
+- Mobile version
+ ![lighthouse_mobile](assets/images/lighthousemobile.png)
 
 #### **Validator Testing**
 
 - **HTML**
-  
-- **CSS**
-  
-- **JS**
+  - First time running the html validator I got 1 error, 1 info and 1 warning message: 
 
+  ![imagespace](assets/images/htmlimagespace.png)
+  - I renamed the image that fixed the issue.
+  ![inputslash](assets/images/htmlinputslash.png)
+  - deleted the slash end of the input
+  ![htmlsection](assets/images/htmlsection.png)
+  - and deleted the section, because it was unnecessary.
+
+  - After these mistakes were fixed, no errors were returned when passing through the official [W3c validator](https://validator.w3.org/)
+- **CSS**
+
+  - First time running the css validator I got 2 errors and 1 warning message: 
+![cssfamily](assets/images/cssfamilynames.png)
+  - I deleted the space and I used quotes, and the problem solved.
+    ```
+    font-family:"Playfair Display", sans-serif;
+    ```
+    
+![csserrors](assets/images/csserrors.png)
+  - I changed 'not-allowed' to 'none' and I deleted the unnecessary font-size.
+
+  - After these mistakes were fixed, no errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/)
+
+
+- **JS**
+  - I tested my codes continuously with the JS validator during my work. I made many mistakes. For example, I often used the wrong keyword when I defined variables(let and const).
+  - I forgot to call the function
+  - missing or unnecessary semicolons
+  - The quiz has 10 questions, but after a couple of questions the game froze. 
+  ```
+  questionIndex = Math.floor(Math.random() * 10
+  ```
+  - After i change the '10' to 'availableQuesions.length' it solved the problem
+
+  ```
+  questionIndex = Math.floor(Math.random() * availableQuesions.length
+  ```
+
+
+![jsvalidator](assets/images/jsvalidator.png)
+  - After these mistakes were fixed, no errors were returned when passing through the official [JS validator](https://jshint.com/)
 ## Deployment  
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   1. In the GitHub repository, navigate to the Settings tab.
   2. From the source section drop-down menu, select the Master Branch.
   3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-  4. The live link can be found here: https://luinen.github.io/2ndproject_quiz/
+  4. The live link can be found here: https://luinen.github.io/Halloweenquiz/
 
 - If you want to clone the repository:
   1. In the GitHub repository, click on the 'Code'.
@@ -89,7 +132,8 @@ I used lighthouse to check the performance of my home page for mobile devices an
   3. Click 'Choose...' and, using the Finder window, navigate to a local path where you want to clone the repository. 
   4. Click Clone.  
 
-  ## Credits
+
+## Credits
 
 #### Content
 
