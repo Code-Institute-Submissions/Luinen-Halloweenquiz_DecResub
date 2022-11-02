@@ -118,6 +118,9 @@ I used lighthouse to check the performance of my home page for mobile devices an
 
 ![jsvalidator](assets/images/jsvalidator.png)
   - After these mistakes were fixed, no errors were returned when passing through the official [JS validator](https://jshint.com/)
+
+#### 
+
 ## Deployment  
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
