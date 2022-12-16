@@ -35,3 +35,10 @@ const quiz = [
     {ans4: 'to repel spirits that they believed came back to Earth', isCorrect: false}]
     }
     ];
+
+var i=0;
+function getNewQuestion(i) {
+  const question = document.getElementById('question');
+  question.innerText= quiz[i].quest
+}
+getNewQuestion(i)
