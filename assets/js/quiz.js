@@ -40,5 +40,9 @@ var i=0;
 function getNewQuestion(i) {
   const question = document.getElementById('question');
   question.innerText= quiz[i].quest
+  const answer1 = document.getElementById('ans1');
+  const answer2 = document.getElementById('ans2');
+  const answer3 = document.getElementById('ans3');
+  const answer4 = document.getElementById('ans4');
 }
 getNewQuestion(i)
