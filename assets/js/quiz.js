@@ -33,8 +33,43 @@ const quiz = [
     {ans2: 'to disguise themselves when the spirits come', isCorrect: true},
     {ans3: 'to see the otherworld', isCorrect: false},
     {ans4: 'to repel spirits that they believed came back to Earth', isCorrect: false}]
-    }
-    ];
+    },
+    {quest: 'What vegetable is part of a tradition on the night before Halloween?',
+    ans:
+    [{ans1: 'Pepper', isCorrect: false},
+    {ans2: 'Cucumber', isCorrect: false},
+    {ans3: 'Cabbage(Kale)', isCorrect: true},
+    {ans4: 'Pumpkin', isCorrect: false}]
+    },
+    {quest: 'Why do some people wear clothes inside out on Halloween?',
+    ans:
+    [{ans1: 'to see a witch at midnight', isCorrect: true},
+    {ans2: 'to transform into an animal', isCorrect: false},
+    {ans3: 'to save the planet', isCorrect: false},
+    {ans4: 'to make a deal with the devil', isCorrect: false}]
+    },
+    {quest: 'What is the most commercially successful horror movie of all time?',
+    ans:
+    [{ans1: 'Paranormal Activity', isCorrect: false},
+    {ans2: 'Deliver Us from Evil', isCorrect: false},
+    {ans3: 'Alien', isCorrect: false},
+    {ans4: 'It', isCorrect: true}]
+    },
+    {quest: 'What was used before pumpkins to make jack o\'lanterns?',
+    ans:
+    [{ans1: 'Watermelon', isCorrect: false},
+    {ans2: 'Beetroots', isCorrect: false},
+    {ans3: 'Onions', isCorrect: false},
+    {ans4: 'Potatoes', isCorrect: true}]
+    },
+    {quest: 'What does the black cat symbolize?',
+    ans:
+    [{ans1: 'Power and strength', isCorrect: false},
+    {ans2: 'Life and death', isCorrect: false},
+    {ans3: 'Mystery and secrecy', isCorrect: true},
+    {ans4: 'Freedom and vanity', isCorrect: false}]
+}
+];
 
 var i=0;
 function getNewQuestion(i) {
