@@ -81,9 +81,9 @@ function getNewQuestion(i) {
   const answer3 = document.getElementById('ans3');
   const answer4 = document.getElementById('ans4');
 
-  answer1.innerText = quiz[i].ans[0];
-  answer2.innerText = quiz[i].ans[1];
-  answer3.innerText = quiz[i].ans[2];
-  answer4.innerText = quiz[i].ans[3];
+  answer1.innerText = quiz[i].ans[0].ans1;
+  answer2.innerText = quiz[i].ans[1].ans2;
+  answer3.innerText = quiz[i].ans[2].ans3;
+  answer4.innerText = quiz[i].ans[3].ans4;
 }
 getNewQuestion(i)
