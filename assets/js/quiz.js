@@ -75,9 +75,15 @@ var i=0;
 function getNewQuestion(i) {
   const question = document.getElementById('question');
   question.innerText= quiz[i].quest
+
   const answer1 = document.getElementById('ans1');
   const answer2 = document.getElementById('ans2');
   const answer3 = document.getElementById('ans3');
   const answer4 = document.getElementById('ans4');
+
+  answer1.innerText = quiz[i].ans[0];
+  answer2.innerText = quiz[i].ans[1];
+  answer3.innerText = quiz[i].ans[2];
+  answer4.innerText = quiz[i].ans[3];
 }
 getNewQuestion(i)
