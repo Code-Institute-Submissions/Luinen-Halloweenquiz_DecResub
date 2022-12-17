@@ -96,6 +96,9 @@ getNewQuestion(i)
 
 const next= document.getElementsByClassName('next')[0];
 next.addEventListener("click", () => {
-// next.innerText="pressed";
-next.innerText=i;
+  if (i<9){
+    si++;
+}
+  const result = document.getElementsByClassName('result')[0];
+  result.innerText = '';
 getNewQuestion(i);
