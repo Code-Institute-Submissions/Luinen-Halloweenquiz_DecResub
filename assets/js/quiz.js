@@ -87,3 +87,7 @@ function getNewQuestion(i) {
   answer4.innerText = quiz[i].ans[3].ans4;
 }
 getNewQuestion(i)
+
+const next= document.getElementsByClassName('next')[0];
+next.addEventListener("click", () => {
+next.innerText="megnyomva";
