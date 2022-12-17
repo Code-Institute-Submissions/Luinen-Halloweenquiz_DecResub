@@ -85,6 +85,12 @@ function getNewQuestion(i) {
   answer2.innerText = quiz[i].ans[1].ans2;
   answer3.innerText = quiz[i].ans[2].ans3;
   answer4.innerText = quiz[i].ans[3].ans4;
+
+  const quizLength=quiz.length;
+  const check = document.getElementsByClassName('check')[0];
+  check.addEventListener("click", () => {
+    const result = document.getElementsByClassName('result')[0];
+    result.innerText = 'correct answer';
 }
 getNewQuestion(i)
 
