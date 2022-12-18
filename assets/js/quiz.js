@@ -92,6 +92,7 @@ function getNewQuestion(i) {
   const ans4Correctness=quiz[i].ans[3].isCorrect;
 
   var clicked = '';
+  var clickedBtn="";
 
   answer1.addEventListener('click', () => {
     answer1.style.border= '3px solid black';
@@ -99,6 +100,7 @@ function getNewQuestion(i) {
     answer3.style.border= 'none';
     answer4.style.border= 'none';
     clicked = ans1Correctness;
+    clickedBtn=answer1;
 }
 );
   answer2.addEventListener('click', () => {
@@ -107,6 +109,7 @@ function getNewQuestion(i) {
     answer3.style.border= 'none';
     answer4.style.border= 'none';
     clicked = ans2Correctness;
+    clickedBtn=answer2;
 }
 );
   answer3.addEventListener('click', () => {
@@ -115,6 +118,7 @@ function getNewQuestion(i) {
     answer1.style.border= 'none';
     answer4.style.border= 'none';
     clicked = ans3Correctness;
+    clickedBtn=answer3;
 }
 );
   answer4.addEventListener('click', () => {
@@ -123,6 +127,7 @@ function getNewQuestion(i) {
     answer3.style.border= 'none';
     answer1.style.border= 'none';
     clicked = ans4Correctness;
+    clickedBtn=answer4;
   }
   );
 
@@ -130,9 +135,11 @@ function getNewQuestion(i) {
   check.addEventListener("click", () => {
     if (clicked){
       check.style.background = 'green';
+      clickedBtn.style.background= 'green';
     }
     else {
       check.style.background = 'red';
+      clickedBtn.style.background= 'red';
   }
 }
 getNewQuestion(i)
