@@ -91,15 +91,41 @@ function getNewQuestion(i) {
   const ans3Correctness=quiz[i].ans[2].isCorrect;
   const ans4Correctness=quiz[i].ans[3].isCorrect;
 
-var clicked = '';
+  var clicked = '';
 
-answer1.addEventListener('click', () => {
-  answer1.style.border= '3px solid black';
-  answer2.style.border= 'none';
-  answer3.style.border= 'none';
-  answer4.style.border= 'none';
-  clicked = ans1Correctness;
-
+  answer1.addEventListener('click', () => {
+    answer1.style.border= '3px solid black';
+    answer2.style.border= 'none';
+    answer3.style.border= 'none';
+    answer4.style.border= 'none';
+    clicked = ans1Correctness;
+}
+);
+  answer2.addEventListener('click', () => {
+    answer2.style.border= '3px solid black';
+    answer1.style.border= 'none';
+    answer3.style.border= 'none';
+    answer4.style.border= 'none';
+    clicked = ans2Correctness;
+}
+);
+  answer3.addEventListener('click', () => {
+    answer3.style.border= '3px solid black';
+    answer2.style.border= 'none';
+    answer1.style.border= 'none';
+    answer4.style.border= 'none';
+    clicked = ans3Correctness;
+}
+);
+  answer4.addEventListener('click', () => {
+    answer4.style.border= '3px solid black';
+    answer2.style.border= 'none';
+    answer3.style.border= 'none';
+    answer1.style.border= 'none';
+    clicked = ans4Correctness;
+  }
+  );
+  
   const check = document.getElementsByClassName('check')[0];
   check.addEventListener("click", () => {
     const result = document.getElementsByClassName('result')[0];
