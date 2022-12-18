@@ -86,6 +86,11 @@ function getNewQuestion(i) {
   answer3.innerText = quiz[i].ans[2].ans3;
   answer4.innerText = quiz[i].ans[3].ans4;
 
+  const ans1Correctness=quiz[i].ans[0].isCorrect;
+  const ans2Correctness=quiz[i].ans[1].isCorrect;
+  const ans3Correctness=quiz[i].ans[2].isCorrect;
+  const ans4Correctness=quiz[i].ans[3].isCorrect;
+
 var clicked = '';
 
 answer1.addEventListener('click', () => {
@@ -93,7 +98,7 @@ answer1.addEventListener('click', () => {
   answer2.style.border= 'none';
   answer3.style.border= 'none';
   answer4.style.border= 'none';
-  clicked = 
+  clicked = ans1Correctness;
 
   const check = document.getElementsByClassName('check')[0];
   check.addEventListener("click", () => {
