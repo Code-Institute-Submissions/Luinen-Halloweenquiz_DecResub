@@ -149,11 +149,12 @@ getNewQuestion(i)
 function getNextQuestion(){
   const next= document.getElementsByClassName('next')[0];
   next.addEventListener('click', () => {
-      setAnswerButtons(false);
-      if (i<9){
+    resetButtonsStyles()
+    setAnswerButtons(false);
+    if (i<9){
       i++;
       }
-      getNewQuestion(i);
+    getNewQuestion(i);
 }
 );
 }
@@ -179,4 +180,21 @@ function setAnswerButtons(condition){
     answer4.disabled=false;
     check.disabled=false;
   }
+}
+
+function resetButtonsStyles(){
+  const answer1 = document.getElementById('ans1');
+  const answer2 = document.getElementById('ans2');
+  const answer3 = document.getElementById('ans3');
+  const answer4 = document.getElementById('ans4');
+  const check = document.getElementsByClassName('check')[0]; 
+  answer1.style.background = '#9415b0';
+  answer2.style.background = '#9415b0';
+  answer3.style.background = '#9415b0';
+  answer4.style.background = '#9415b0';
+  check.style.background = '#9415b0';
+  answer1.style.border = 'none';
+  answer2.style.border = 'none';
+  answer3.style.border = 'none';
+  answer4.style.border = 'none';
 }
