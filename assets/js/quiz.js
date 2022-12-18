@@ -125,11 +125,15 @@ function getNewQuestion(i) {
     clicked = ans4Correctness;
   }
   );
-  
+
   const check = document.getElementsByClassName('check')[0];
   check.addEventListener("click", () => {
-    const result = document.getElementsByClassName('result')[0];
-    result.innerText = 'correct answer';
+    if (clicked){
+      check.style.background = 'green';
+    }
+    else {
+      check.style.background = 'red';
+  }
 }
 getNewQuestion(i)
 
