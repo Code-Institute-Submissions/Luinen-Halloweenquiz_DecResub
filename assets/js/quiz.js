@@ -86,7 +86,15 @@ function getNewQuestion(i) {
   answer3.innerText = quiz[i].ans[2].ans3;
   answer4.innerText = quiz[i].ans[3].ans4;
 
-  const quizLength=quiz.length;
+var clicked = '';
+
+answer1.addEventListener('click', () => {
+  answer1.style.border= '3px solid black';
+  answer2.style.border= 'none';
+  answer3.style.border= 'none';
+  answer4.style.border= 'none';
+  clicked = 
+
   const check = document.getElementsByClassName('check')[0];
   check.addEventListener("click", () => {
     const result = document.getElementsByClassName('result')[0];
