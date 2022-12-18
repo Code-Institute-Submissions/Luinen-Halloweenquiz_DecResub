@@ -144,11 +144,14 @@ function getNewQuestion(i) {
 }
 getNewQuestion(i)
 
-const next= document.getElementsByClassName('next')[0];
-next.addEventListener("click", () => {
-  if (i<9){
-    si++;
+function getNextQuestion(){
+  const next= document.getElementsByClassName('next')[0];
+  next.addEventListener('click', () => {
+      if (i<9){
+      i++;
+      }
+      getNewQuestion(i);
 }
-  const result = document.getElementsByClassName('result')[0];
-  result.innerText = '';
-getNewQuestion(i);
+);
+}
+getNextQuestion();
