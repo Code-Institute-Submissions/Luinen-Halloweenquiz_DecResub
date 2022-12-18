@@ -141,12 +141,15 @@ function getNewQuestion(i) {
       check.style.background = 'red';
       clickedBtn.style.background= 'red';
   }
+  setAnswerButtons(true);
 }
+);
 getNewQuestion(i)
 
 function getNextQuestion(){
   const next= document.getElementsByClassName('next')[0];
   next.addEventListener('click', () => {
+      setAnswerButtons(false);
       if (i<9){
       i++;
       }
@@ -155,3 +158,25 @@ function getNextQuestion(){
 );
 }
 getNextQuestion();
+
+function setAnswerButtons(condition){
+  const answer1 = document.getElementById('ans1');
+  const answer2 = document.getElementById('ans2');
+  const answer3 = document.getElementById('ans3');
+  const answer4 = document.getElementById('ans4');
+  const check = document.getElementsByClassName('check')[0]; 
+  if (condition){
+    answer1.disabled=true;
+    answer2.disabled=true;
+    answer3.disabled=true;
+    answer4.disabled=true;
+    check.disabled=true;
+  }
+  else {
+    answer1.disabled=false;
+    answer2.disabled=false;
+    answer3.disabled=false;
+    answer4.disabled=false;
+    check.disabled=false;
+  }
+}
