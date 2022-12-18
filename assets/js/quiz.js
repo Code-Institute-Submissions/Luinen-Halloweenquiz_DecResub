@@ -71,6 +71,7 @@ const quiz = [
 }
 ];
 
+var myScore = 0;
 var i=0;
 function getNewQuestion(i) {
   const question = document.getElementById('question');
@@ -197,4 +198,18 @@ function resetButtonsStyles(){
   answer2.style.border = 'none';
   answer3.style.border = 'none';
   answer4.style.border = 'none';
+}
+
+function setMyScore(){
+  const correctScore = 5;
+  const wrongScore = 1;
+  const currentScore = document.getElementById('score')
+  const check = document.getElementsByClassName('check')[0];
+  if (clicked){
+    myScore += correctScore;
+  }
+  else {
+    myScore -= wrongScore;
+  }
+  myScore = currentScore;
 }
