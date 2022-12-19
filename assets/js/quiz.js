@@ -81,6 +81,8 @@ const quiz = [
   }
 ];
 
+var clicked = "";
+var clickedBtn = "";
 var myScore = 0;
 var i = 0;
 function getNewQuestion(i) {
@@ -101,9 +103,6 @@ function getNewQuestion(i) {
   const ans2Correctness = quiz[i].ans[1].isCorrect;
   const ans3Correctness = quiz[i].ans[2].isCorrect;
   const ans4Correctness = quiz[i].ans[3].isCorrect;
-
-  var clicked = "";
-  var clickedBtn = "";
 
   answer1.addEventListener('click', () => {
     answer1.style.border = '3px solid black';
@@ -141,20 +140,27 @@ function getNewQuestion(i) {
     clickedBtn = answer4;
   }
   );
-  const check = document.getElementsByClassName('check')[0];
-  check.addEventListener('click', () => {
-    if (clicked) {
-      check.style.background = 'green';
-      clickedBtn.style.background = 'green';
-    }
-    else {
-      check.style.background = 'red';
-      clickedBtn.style.background = 'red';
-    }
-    setAnswerButtons(true);
-  }
-  );
 }
+
+const check = document.getElementsByClassName('check')[0];
+check.addEventListener('click', () => {
+  if (clicked) {
+    check.style.background = 'green';
+    clickedBtn.style.background = 'green';
+    myScore += 5;
+    let currentScore = document.getElementById('currentScore');
+    currentScore.innerText = myScore;
+  }
+  else {
+    check.style.background = 'red';
+    clickedBtn.style.background = 'red';
+    myScore -= 1;
+    let currentScore = document.getElementById('currentScore');
+    currentScore.innerText = myScore;
+  }
+  setAnswerButtons(true);
+}
+);
 
 getNewQuestion(i);
 
@@ -209,18 +215,4 @@ function resetButtonsStyles() {
   answer2.style.border = 'none';
   answer3.style.border = 'none';
   answer4.style.border = 'none';
-}
-
-function setMyScore() {
-  const correctScore = 5;
-  const wrongScore = 1;
-  const currentScore = document.getElementById('score')
-  const check = document.getElementsByClassName('check')[0];
-  if (clicked) {
-    myScore += correctScore;
-  }
-  else {
-    myScore -= wrongScore;
-  }
-  myScore = currentScore;
 }
