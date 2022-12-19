@@ -232,15 +232,18 @@ input::placeholder {
     font-size: 24px;
     width: 15rem;
   }
-  #score, #question, #end, #finalScore {
-  font-size: 24px;
+  #currentScore{
+    font-size: 30px;
   }
-  .choice-prefix, .choice-text, .hud-prefix, .lastscore {
-    font-size: 24px;
+  #question{
+  font-size: 24px;
   }
   input {
     width: 15rem;
     font-size: 24px;
+  }
+  #game_over {
+    font-size: 30px;
   }
 }
 
@@ -264,15 +267,18 @@ input::placeholder {
     font-size: 16px;
     width: 10rem;
   }
-  #score, #question, #end, #finalScore {
-  font-size: 16px;
+  #currentScore {
+    font-size: 20px;
   }
-  .choice-prefix, .choice-text, .hud-prefix, .lastscore {
-    font-size: 16px;
+  #question {
+  font-size: 16px;
   }
   input {
     width: 10rem;
     font-size: 16px;
+  }
+  #game_over {
+    font-size: 20px;
   }
 }
 
@@ -284,5 +290,8 @@ input::placeholder {
 
   .welcome {
     font-size: smaller;
+  }
+  #game_over {
+    font-size: 16px;
   }
 }
