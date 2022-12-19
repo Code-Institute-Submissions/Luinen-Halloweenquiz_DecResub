@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family:"Playfair Display", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   box-sizing: border-box;
 }
 
@@ -59,7 +59,7 @@ a {
   box-shadow: 0 0 10px 2px;
 }
 
-.container > * {
+.container>* {
   width: 100%;
 }
 
@@ -81,10 +81,6 @@ a {
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
 /*instructions*/
 
 #instructions {
@@ -95,6 +91,14 @@ a {
 }
 
 /*buttons*/
+
+#question {
+  font-size: 30px;
+}
+
+#currentScore {
+  font-size: 40px;
+}
 
 .btn {
   font-size: 36px;
@@ -138,42 +142,16 @@ a {
   color: #ebeb14;
 }
 
-.choice-container:hover {
-  cursor: pointer;
-  border: 3px solid black;
-  box-shadow: 0 8px 20px 0 purple;
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
-}
-
-.choice-prefix {
-  padding: 1rem 2rem;
-  border: 3px solid black;
-  background-color: purple;
-  color: #ebeb14;
-}
-
-.choice-text {
-  padding: 1.5rem;
-  width: 100%;
-  font-size: 25px;
-}
-
 .result {
-display: flex;
-flex-direction: column;
-height: 75%;
-font-size: 40px;
-font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .nav {
-display: flex;
-justify-content: space-around;
-}
-
-.question {
-margin-top: -20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*username*/
@@ -217,31 +195,39 @@ input::placeholder {
     width: 110px;
     height: 140px;
   }
+
   .welcome {
     font-size: medium;
   }
+
   .container {
     width: 95vw;
   }
+
   #instructions {
     font-size: 24px;
     margin-bottom: 2rem;
     padding: 3px 7px;
   }
+
   .btn {
     font-size: 24px;
     width: 15rem;
   }
-  #currentScore{
+
+  #currentScore {
     font-size: 30px;
   }
-  #question{
-  font-size: 24px;
+
+  #question {
+    font-size: 24px;
   }
+
   input {
     width: 15rem;
     font-size: 24px;
   }
+
   #game_over {
     font-size: 30px;
   }
@@ -252,31 +238,39 @@ input::placeholder {
     width: 90px;
     height: 120px;
   }
+
   .welcome {
     font-size: small;
   }
+
   .container {
     width: 90vw;
   }
+
   #instructions {
     font-size: 16px;
     margin-bottom: 1rem;
     padding: 1px 5px;
   }
+
   .btn {
     font-size: 16px;
     width: 10rem;
   }
+
   #currentScore {
     font-size: 20px;
   }
+
   #question {
-  font-size: 16px;
+    font-size: 16px;
   }
+
   input {
     width: 10rem;
     font-size: 16px;
   }
+
   #game_over {
     font-size: 20px;
   }
@@ -291,6 +285,7 @@ input::placeholder {
   .welcome {
     font-size: smaller;
   }
+
   #game_over {
     font-size: 16px;
   }
