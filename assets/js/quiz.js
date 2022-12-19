@@ -21,7 +21,7 @@ const quiz = [
       [{ ans1: 'from a Swedish village', isCorrect: false },
       { ans2: 'from an Irish folktale', isCorrect: true },
       { ans3: 'from an Icelandic lake', isCorrect: false },
-      { ans4: 'None of them', isCorrect: false }]
+      { ans4: 'None of these answers', isCorrect: false }]
   },
   {
     quest: 'When was Halloween first celebrated in the United States?',
@@ -34,9 +34,9 @@ const quiz = [
   {
     quest: 'Why did people start dressing up in Halloween costumes?',
     ans:
-      [{ ans1: 'because it is fun', isCorrect: false },
-      { ans2: 'to disguise themselves when the spirits come', isCorrect: true },
-      { ans3: 'to see the otherworld', isCorrect: false },
+      [{ ans1: 'because it is fun and exciting', isCorrect: false },
+      { ans2: 'to see the otherworld', isCorrect: false },
+      { ans3: 'to disguise themselves when the spirits come(scary)', isCorrect: true },
       { ans4: 'to repel spirits that they believed came back to Earth', isCorrect: false }]
   },
   {
@@ -52,7 +52,7 @@ const quiz = [
     ans:
       [{ ans1: 'to see a witch at midnight', isCorrect: true },
       { ans2: 'to transform into an animal', isCorrect: false },
-      { ans3: 'to save the planet', isCorrect: false },
+      { ans3: 'to save the planet, again', isCorrect: false },
       { ans4: 'to make a deal with the devil', isCorrect: false }]
   },
   {
@@ -75,7 +75,7 @@ const quiz = [
     quest: 'What does the black cat symbolize?',
     ans:
       [{ ans1: 'Power and strength', isCorrect: false },
-      { ans2: 'Life and death', isCorrect: false },
+      { ans2: 'Life and death (sure)', isCorrect: false },
       { ans3: 'Mystery and secrecy', isCorrect: true },
       { ans4: 'Freedom and vanity', isCorrect: false }]
   }
@@ -172,16 +172,16 @@ function getNextQuestion() {
     if (i < 9) {
       i++;
     }
-    else{
+    else {
       gameOverHtml();
-      }
+    }
     getNewQuestion(i);
   }
   );
 }
 
-function gameOverHtml(){
-  const next=document.getElementsByClassName("next")[0];
+function gameOverHtml() {
+  const next = document.getElementsByClassName("next")[0];
   next.innerText = i;
   window.open("game_over.html", "_self");
 }
