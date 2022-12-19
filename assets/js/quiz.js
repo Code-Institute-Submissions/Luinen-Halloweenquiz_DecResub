@@ -81,9 +81,9 @@ const quiz = [
   }
 ];
 
-var elementValue="";
-function getUsername(){
-  elementValue=document.getElementById("username").value;
+var elementValue = "";
+function getUsername() {
+  elementValue = document.getElementById("username").value;
   const userName = document.getElementById('username1');
   userName.innerText = window.elementValue;
   console.log(elementValue);
@@ -94,6 +94,9 @@ var clickedBtn = "";
 var myScore = 0;
 var i = 0;
 function getNewQuestion(i) {
+  const userName = document.getElementById('username1');
+  userName.innerText = window.elementValue;
+
   const question = document.getElementById('question');
   question.innerText = quiz[i].quest;
 
@@ -158,6 +161,7 @@ check.addEventListener('click', () => {
     myScore += 5;
     let currentScore = document.getElementById('currentScore');
     currentScore.innerText = myScore;
+    console.log(myScore);
   }
   else {
     check.style.background = 'red';
@@ -165,6 +169,8 @@ check.addEventListener('click', () => {
     myScore -= 1;
     let currentScore = document.getElementById('currentScore');
     currentScore.innerText = myScore;
+    console.log(myScore);
+
   }
   setAnswerButtons(true);
 }
@@ -181,17 +187,17 @@ function getNextQuestion() {
       i++;
     }
     else {
-      gameOverHtml();
+      endHtml();
     }
     getNewQuestion(i);
   }
   );
 }
 
-function gameOverHtml() {
+function endHtml() {
   const next = document.getElementsByClassName("next")[0];
   next.innerText = i;
-  window.open("game_over.html", "_self");
+  window.open("end.html", "_self");
 }
 
 getNextQuestion();
