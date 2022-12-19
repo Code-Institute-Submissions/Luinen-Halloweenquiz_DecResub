@@ -204,6 +204,14 @@ input::placeholder {
   align-items: center;
 }
 
+#game_over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  color: #ebeb14;
+}
+
 @media (max-width: 800px) {
   .pumpkin-pic {
     width: 110px;
