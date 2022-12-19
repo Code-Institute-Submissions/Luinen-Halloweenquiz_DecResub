@@ -22,11 +22,16 @@ I explain the website features below.
 
   ![main_menu](assets/images/main_menu.png)
 
+- **Username**
+  - The users can enter their names. The form is easy to use and the placeholder helps the users.  
+
+![username](assets/images/username.png)
+
 - **4 choices**
   - You can choose four different answers, and the active answer works the same as the main menu buttons.
 
 ![choices](assets/images/choices.png)
-  - Once the users have selected the answer, they have to use the check button to finalize it. After that the users will not be able to choose another answer, because of the the button disable.
+  - Once the users have selected the answer, they have to use the check button to finalize it. After that, the users can not choose another answer because of the disabled button function.
   - If you choose the good answer, the background of the answer will be green.
   
 ![correctanswer](assets/images/correctanswer.png)
@@ -42,14 +47,14 @@ I explain the website features below.
 ![score](assets/images/score.png)
 
 - **Game Over page**
-  - At the end of the quiz, the users can save their high score and enter their name, play again, or go back to the main menu. The form is easy to use and the placeholder helps the users.  
+  - At the end of the quiz, the users can see their high score or go back to the main menu and play again. 
 
-![gameover](assets/images/gameover.png)
+![gameover](assets/images/game_over.png)
 
-- **Button disabled**
-  - This part shows the saved usernames with their scores. The lowest points are at the bottom of the page, and the highest points are at the top.
+ - **Footer**
+  - The users can click on the social media links at the bottom of the page.
 
-![leaderboard2](assets/images/leaderboard.png)
+![footer](assets/images/footer.png)
 
 ### **Features left to implement**
 - I think a timer or a countdown would be a good idea to add to this quiz
@@ -58,9 +63,8 @@ I explain the website features below.
 ## Testing
 
   - The game works as intended. 
-  - The scoring system is okay, it gives you 100 points for each correct answer. 
+  - The scoring system is okay. It gives you 5 points for each correct answer and subtracts 1 point for a wrong answer.
   - I tested each button and answers.
-  - You have to fill out the username if you want to save your result. 
   - Responsiveness is good enough for every platform. 
 
 #### **Lighthouse testing**
@@ -119,8 +123,7 @@ I used lighthouse to check the performance of my home page for mobile devices an
 
 ## Bugs
 
-- If the users reach the game over page and save the score, after that there is an error 404 'Content Security Policy: The page’s settings blocked the loading of a resource at inline'. If they go back to the main menu and check the High Scores, their score is there.
-- Unfortunately, I wanted to change the repository name and publish the site. After these actions, I opened the gitpod and I noticed some missing lines, and errors, and I wasn't able to push, so I decided to delete the repository(I thought it was just a copy).
+- asd
 
 ## Deployment  
 
@@ -144,8 +147,6 @@ I used lighthouse to check the performance of my home page for mobile devices an
 - The questions for the quiz were taken from [Parade](https://parade.com/1066846/jessicasager/halloween-trivia/).
 - Instructions of the container were taken from  [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)
 - The idea of the rules was taken from [CodingNepal](https://www.youtube.com/c/CodingNepal)
-- Start the game and get new question function tutorial by [James Q Quick](https://www.youtube.com/c/JamesQQuick)
-- Highscore function and local store save by [Brian Design](https://www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A) was great.
 
 #### Media 
 
