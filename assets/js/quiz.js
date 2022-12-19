@@ -81,6 +81,14 @@ const quiz = [
   }
 ];
 
+var elementValue="";
+function getUsername(){
+  elementValue=document.getElementById("username").value;
+  const userName = document.getElementById('username1');
+  userName.innerText = window.elementValue;
+  console.log(elementValue);
+}
+
 var clicked = "";
 var clickedBtn = "";
 var myScore = 0;
