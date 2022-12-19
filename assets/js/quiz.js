@@ -172,10 +172,20 @@ function getNextQuestion() {
     if (i < 9) {
       i++;
     }
+    else{
+      gameOverHtml();
+      }
     getNewQuestion(i);
   }
   );
 }
+
+function gameOverHtml(){
+  const next=document.getElementsByClassName("next")[0];
+  next.innerText = i;
+  window.open("game_over.html", "_self");
+}
+
 getNextQuestion();
 
 function setAnswerButtons(condition) {
