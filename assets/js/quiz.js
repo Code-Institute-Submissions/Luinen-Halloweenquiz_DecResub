@@ -161,7 +161,6 @@ check.addEventListener('click', () => {
     myScore += 5;
     let currentScore = document.getElementById('currentScore');
     currentScore.innerText = myScore;
-    console.log(myScore);
   }
   else {
     check.style.background = 'red';
@@ -169,8 +168,6 @@ check.addEventListener('click', () => {
     myScore -= 1;
     let currentScore = document.getElementById('currentScore');
     currentScore.innerText = myScore;
-    console.log(myScore);
-
   }
   setAnswerButtons(true);
 }
@@ -187,17 +184,16 @@ function getNextQuestion() {
       i++;
     }
     else {
-      endHtml();
+      gameOverHtml();
     }
     getNewQuestion(i);
   }
   );
 }
 
-function endHtml() {
+function gameOverHtml() {
   const next = document.getElementsByClassName("next")[0];
-  next.innerText = i;
-  window.open("end.html", "_self");
+  window.open("game_over.html", "_self");
 }
 
 getNextQuestion();
