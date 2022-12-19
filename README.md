@@ -26,7 +26,7 @@ I explain the website features below.
   - You can choose four different answers, and the active answer works the same as the main menu buttons.
 
 ![choices](assets/images/choices.png)
-
+  - Once the users have selected the answer, they have to use the check button to finalize it. After that the users will not be able to choose another answer, because of the the button disable.
   - If you choose the good answer, the background of the answer will be green.
   
 ![correctanswer](assets/images/correctanswer.png)
@@ -35,8 +35,9 @@ I explain the website features below.
 
 ![wronganswer](assets/images/wronganswer.png)
 
+
 - **Score**
-  - The user receives 100 points for each correct answer. Wrong answers don't give you points, and you can't get more than 1000 points.
+  - The users receive 5 points for each correct answer. Wrong answers give them -1 point.
 
 ![score](assets/images/score.png)
 
@@ -45,7 +46,7 @@ I explain the website features below.
 
 ![gameover](assets/images/gameover.png)
 
-- **Leaderboard**
+- **Button disabled**
   - This part shows the saved usernames with their scores. The lowest points are at the bottom of the page, and the highest points are at the top.
 
 ![leaderboard2](assets/images/leaderboard.png)
