@@ -72,7 +72,7 @@ I explain the website features below.
 
 #### **Lighthouse testing**
 
-I used lighthouse to check the performance of my home page for mobile devices and desktop. The first time running the lighthouse, my SEO value was 80. After I added 'meta', the figures increased.
+I used lighthouse to check the performance of my home page for mobile devices and desktop. The first time running the lighthouse, my SEO value was 80. After I added 'meta', the figures increased. I will try to set the aspect ratio better next time.
 - Desktop version
 ![lighthouse_desktop](assets/images/lighthousedesktop.png)
 - Mobile version
