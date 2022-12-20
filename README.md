@@ -23,7 +23,7 @@ I explain the website features below.
   ![main_menu](assets/images/main_menu.png)
 
 - **Username**
-  - The users can enter their names, and if they don't enter anything, an error message pops up.. The form is easy to use and the placeholder helps the users.
+  - The users can enter their names, and if they don't enter anything, an error message pops up. The form is easy to use and the placeholder helps the users.
 
 ![username](assets/images/username.png)
 
@@ -99,21 +99,22 @@ I used lighthouse to check the performance of my home page for mobile devices an
     ```
     font-family:"Playfair Display", sans-serif;
     ```
-    
-![csserrors](assets/images/csserrors.png)
   - I changed 'not-allowed' to 'none' and I deleted the unnecessary font-size.
 
-  - After these mistakes were fixed, no errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/)
+   - After these mistakes were fixed, no errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/)
+
+![csserrors](assets/images/csserrors.png)
+   
 
 
 - **JS**
   - I tested my codes continuously with the JS validator during my work. I made many mistakes. For example, I often used the wrong keyword when I defined variables(let and const, var).
   - My code wasn't clean, so I put every variable at the top of the page, then the array and functions.
   - missing or unnecessary semicolons
-
-![jsvalidator](assets/images/jsvalidator.png)
   - After these mistakes were fixed, no errors were returned when passing through the official [JS validator](https://jshint.com/)
 
+![jsvalidator](assets/images/jsvalidator.png)
+   
 ## Bugs
 
  - The questionIterator was 0, and I thought the isCorrect didn't work. After I set it to 1, it solved a problem.
