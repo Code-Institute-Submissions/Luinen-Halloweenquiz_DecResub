@@ -23,7 +23,7 @@ I explain the website features below.
   ![main_menu](assets/images/main_menu.png)
 
 - **Username**
-  - The users can enter their names. The form is easy to use and the placeholder helps the users.  
+  - The users can enter their names, and if they don't enter anything, an error message pops up.. The form is easy to use and the placeholder helps the users.
 
 ![username](assets/images/username.png)
 
@@ -63,9 +63,12 @@ I explain the website features below.
 ## Testing
 
   - The game works as intended. 
+  - The users can't progress to the next page unless they enter their names.
+  - The check button never gives you a false result.
   - The scoring system is okay. It gives you 5 points for each correct answer and subtracts 1 point for a wrong answer.
   - I tested each button and answers.
-  - Responsiveness is good enough for every platform. 
+  - Responsiveness is good enough for every platform.
+  - The game-over page always shows the current username and their scores.
 
 #### **Lighthouse testing**
 
