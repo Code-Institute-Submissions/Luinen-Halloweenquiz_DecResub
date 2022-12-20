@@ -56,8 +56,8 @@ const quiz = [
     quest: "Why did people start dressing up in Halloween costumes?",
     ans: [
       { ans1: "because it is fun and exciting", isCorrect: false },
-      { ans2: "to see the otherworld", isCorrect: true },
-      { ans3: "to disguise themselves when the spirits come(scary)", isCorrect: false },
+      { ans2: "to see the otherworld", isCorrect: false },
+      { ans3: "to disguise themselves when the spirits come(scary)", isCorrect: true },
       {
         ans4: "to repel spirits that they believed came back to Earth",
         isCorrect: false,
@@ -133,6 +133,7 @@ function getNewQuestion() {
     game_overHtml();
   }
 
+  question.innerText = quiz[questionIterator].quest;
   answer1.innerText = quiz[questionIterator].ans[0].ans1;
   answer2.innerText = quiz[questionIterator].ans[1].ans2;
   answer3.innerText = quiz[questionIterator].ans[2].ans3;
