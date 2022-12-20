@@ -107,26 +107,18 @@ I used lighthouse to check the performance of my home page for mobile devices an
 
 
 - **JS**
-  - I tested my codes continuously with the JS validator during my work. I made many mistakes. For example, I often used the wrong keyword when I defined variables(let and const).
-  - I forgot to call the function
+  - I tested my codes continuously with the JS validator during my work. I made many mistakes. For example, I often used the wrong keyword when I defined variables(let and const, var).
+  - My code wasn't clean, so I put every variable at the top of the page, then the array and functions.
   - missing or unnecessary semicolons
-  - The quiz has 10 questions, but after a couple of questions the game froze. 
-  ```
-  questionIndex = Math.floor(Math.random() * 10
-  ```
-  - After i change the '10' to 'availableQuesions.length' it solved the problem
-
-  ```
-  questionIndex = Math.floor(Math.random() * availableQuesions.length
-  ```
-
 
 ![jsvalidator](assets/images/jsvalidator.png)
   - After these mistakes were fixed, no errors were returned when passing through the official [JS validator](https://jshint.com/)
 
 ## Bugs
 
-- asd
+ - The questionIterator was 0, and I thought the isCorrect didn't work. After I set it to 1, it solved a problem.
+ - I tried to use sessionStorage to save the username and score, but I had error messages, so I changed it to localStorage.
+ - The resetButtonStyle and setAnswerButton functions didn't work with getElementsByClass(only with one button at a time, not with all of them), so I used getElementById.
 
 ## Deployment  
 

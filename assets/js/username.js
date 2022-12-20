@@ -6,6 +6,6 @@ function getUsername(){
       localStorage.setItem('userName', usernameValue);
     }
     else{
-      alert('You need to enter your name')
+      alert('You need to enter your name');
     }
   }

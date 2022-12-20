@@ -6,10 +6,8 @@ let answer1 = document.getElementById("ans1");
 let answer2 = document.getElementById("ans2");
 let answer3 = document.getElementById("ans3");
 let answer4 = document.getElementById("ans4");
-let disabledAnswBtn = "";
 
 let question = document.getElementById("question");
-let result = document.getElementsByClassName("result")[0];
 let checkBtn = document.getElementById("checkBtn");
 
 let currentScore = document.getElementById('currentScore');
@@ -117,7 +115,7 @@ const quiz = [
 function initFirstPage() {
   let userName = localStorage.getItem('userName');
   let username1 = document.getElementById('username1');
-  username1.innerText = userName
+  username1.innerText = userName;
   question.innerText = quiz[0].quest;
 
   answer1.innerText = quiz[0].ans[0].ans1;
@@ -132,7 +130,7 @@ function getNewQuestion() {
   setAnswerButtons(false);
   question = document.getElementById("question");
   if (quiz.length === questionIterator) {
-    game_overHtml()
+    game_overHtml();
   }
 
   answer1.innerText = quiz[questionIterator].ans[0].ans1;
@@ -182,13 +180,13 @@ function checkCorrectAnswer() {
     clickedBtn.style.background = "green";
     myScore += correctScore;
     currentScore.innerText = myScore;
-    localStorage.setItem('myScore', myScore)
+    localStorage.setItem('myScore', myScore);
   } else {
     checkBtn.style.background = "red";
     clickedBtn.style.background = "red";
     myScore += wrongScore;
     currentScore.innerText = myScore;
-    localStorage.setItem('myScore', myScore)
+    localStorage.setItem('myScore', myScore);
   }
   setAnswerButtons(true);
 }
